@@ -12,16 +12,17 @@
 let  transformaArrayEnOtraConSusLongitudes = (array) => {
     let arrayDelongitudes = [];
     // Aquí tu código.  Desde aquí:
-    if (typeof array !== 'object' && array.length <= 0) {
+    if (typeof array !== 'object' && array.length >= 0) {
         return "Debo ser ejecutada con un array";
     } else if (typeof array !== 'array') {
         return "Debo ser ejecutada con un array";
     }
-    for (const arrayLast of arrayDelongitudes) {
-        return arrayLast = [arrayDelongitudes.length];
+    for (const arrayLast of array) {
+        return arrayDeLongitudes.push(array.length);
     }
-    return arrayDelongitudes;
+    
     // Hasta aquí.
+    return arrayDelongitudes;
 }
 
 
