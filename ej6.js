@@ -10,15 +10,14 @@
 // Ha de pasar los test adjuntados.
 
 let  transformaArrayEnOtraConSusLongitudes = (array) => {
+    
     let arrayDelongitudes = [];
     // Aquí tu código.  Desde aquí:
-    if (typeof array !== 'object' && array.length >= 0) {
+    if (!(typeof array === 'object' && array.length >= 0)) {
         return "Debo ser ejecutada con un array";
-    } else if (typeof array !== 'array') {
-        return "Debo ser ejecutada con un array";
-    }
-    for (const arrayLast of array) {
-        return arrayDeLongitudes.push(array.length);
+    } 
+    for (const item of array) {
+        arrayDelongitudes.push(item.length);
     }
     
     // Hasta aquí.
